@@ -34,7 +34,7 @@ export default function CreatePage() {
       return;
     }
     setResult(
-      `${activePet.avatarEmoji} ✨ ${activePet.name} in ${style.replace(/[^\s]+\s/, "")} — a gallery-ready portrait for modern pet parents.`,
+      `${activePet.avatarEmoji} ✨ ${activePet.name} in ${style.replace(/^[^\s]+\s/, "")} — a gallery-ready portrait for modern pet parents.`,
     );
     setToast(`Artwork created · −${STUDIO_COST} 🪙`);
     setTimeout(() => setToast(null), 2200);
